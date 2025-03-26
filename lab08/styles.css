@@ -1,47 +1,86 @@
-/* Body Background Color */
 body {
-    background-color: #1C2841; /* Navy Blue */
-    color: #FFFFFF; /* White text color */
+    background-color: #F4F5F8;
+    color: #003B5C;
 }
 
-/* Text Color */
-p, span, a {
-    color: #FFFFFF; /* White text for paragraphs, spans, and links */
-}
-
-/* Link Color */
 a {
-    color: #4C9BCF; /* Sky Blue for links */
+    color: #A8A8A8; /* Light Gray for links */
 }
 
 a:hover {
-    color: #FFD700; /* Gold on hover for links */
+    background-color: #A8A8A8;
+    color: #003B5C;
 }
 
-/* Heading Color */
-h1, h2, h3, h4, h5, h6 {
-    color: #FFD700; /* Gold color for headings */
+h1, h2, h3 {
+    color: #003B5C;
 }
 
-/* Site Navigation Background */
 nav {
-    background-color: #1C2841; /* Navy Blue for navigation background */
-    padding: 10px; /* Add padding to navigation */
-    margin-bottom: 30px; /* Add margin to the bottom of the navigation */
+    background-color: #003B5C;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
-/* Site Navigation Link Color */
 nav a {
-    color: #FFFFFF; /* White text for navigation links */
+    color: #FFFFFF;
 }
 
-/* Site Navigation Highlight Color */
 nav a:hover {
-    background-color: #4C9BCF; /* Sky Blue when hovering over navigation links */
-    color: #1C2841; /* Change link color to navy blue on hover */
+    background-color: #A8A8A8;
+    color: #003B5C;
 }
 
-/* Optional: Add a border or shadow to navigation */
-nav {
-    border-bottom: 2px solid #FFD700; /* Gold border at the bottom of the nav */
+table, th, td {
+    border: 1px solid black;
+}
+
+.quote {
+    float: right;
+    color: #003B5C;
+}
+
+.row1 {
+    display: flex;
+    margin: 10px;
+    background-color: #003B5C;
+    border-radius: 1em;
+    color: white;
+    justify-content: space-between;
+    padding: 10px;
+}
+.address, .link {
+    flex: 1;
+}
+.address p, .link p {
+    margin: 0;
+    color: white;
+}
+.link a {
+    display: flex;
+    margin-bottom: 10px;
+    color: white;
+}
+.link img {
+    display: flex;
+    margin-top: 10px;
+}
+.row2 {
+    display: flex;
+    margin: 10px;
+    background-color: #003B5C;
+    border-radius: 1em;
+    color: white;
+    justify-content: space-between;
+    padding: 10px;
+}
+.form, .map {
+    flex: 1;
+}
+.form {
+    padding: 20px;
+}
+.form p {
+    color: white;
+    margin: 10px;
 }
