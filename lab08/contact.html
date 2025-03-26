@@ -40,8 +40,11 @@
             justify-content: space-between;
             padding: 10px;
         }
-        .form, .map {
+        .form {
             flex: 1;
+        }
+        .map {
+            flex: 2;
         }
         .form p {
             margin: 0;
@@ -81,7 +84,7 @@
 <div class="row2">
     <div class="form">
         <form action="https://formspree.io/f/xjkgoear" method="post">
-        <label for="name">Name:</label>
+        <label for="name">Your Name:</label><br>
         <input type="text" id="name" name="name"><br>
 
         <p>Please select your age:</p>
@@ -92,7 +95,7 @@
         <input type="radio" id="age3" name="age" value="100">
         <label for="age3">61 - 100</label><br>
 
-        <label for="comments">Comments:</label>
+        <label for="comments">Comments:</label><br>
         <textarea id="comments" name="comments"></textarea><br>
 
         <input type="submit" value="Send Form">
