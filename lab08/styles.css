@@ -41,11 +41,6 @@ nav a:hover {
     color: #003B5C; /* Navy Blue on hover for text */
 }
 
-/* Optional: Add a border or shadow to navigation */
-nav {
-    border-bottom: 2px solid #003B5C; /* Navy Blue border at the bottom of the nav */
-}
-
 /* Footer Tagline */
 footer .quote {
     float: right; /* Align tagline to the right */
