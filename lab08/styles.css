@@ -41,8 +41,12 @@ nav a:hover {
     color: #003B5C; /* Navy Blue on hover for text */
 }
 
+footer {
+    margin: 0;
+}
+
 /* Footer Tagline */
-footer .quote {
+.quote {
     float: right; /* Align tagline to the right */
     color: #003B5C; /* Navy Blue for footer tagline */
 }
