@@ -1,53 +1,53 @@
 /* Body Background Color */
 body {
-    background-color: #B0D0D3; /* Light Baby Blue */
-    color: #2C3E50; /* Darker Blue-Gray text for contrast */
+    background-color: #F4F5F8; /* Light Gray for a clean background */
+    color: #003B5C; /* Navy Blue text for contrast */
 }
 
 /* Text Color */
 p, span, a {
-    color: #2C3E50; /* Darker Blue-Gray text for paragraphs, spans, and links */
+    color: #003B5C; /* Navy Blue text for paragraphs, spans, and links */
 }
 
 /* Link Color */
 a {
-    color: #A3C9E2; /* Soft Baby Blue for links */
+    color: #A8A8A8; /* Light Gray for links */
 }
 
 a:hover {
-    color: #FF6F61; /* Soft Coral on hover for links */
+    color: #003B5C; /* Navy Blue on hover for links */
 }
 
 /* Heading Color */
 h1, h2, h3, h4, h5, h6 {
-    color: #FF6F61; /* Soft Coral for headings */
+    color: #003B5C; /* Navy Blue for headings */
 }
 
 /* Site Navigation Background */
 nav {
-    background-color: #B0D0D3; /* Light Baby Blue for navigation background */
+    background-color: #003B5C; /* Navy Blue for navigation background */
     padding: 10px; /* Add padding to navigation */
     margin-bottom: 30px; /* Add margin to the bottom of the navigation */
 }
 
 /* Site Navigation Link Color */
 nav a {
-    color: #2C3E50; /* Darker Blue-Gray text for navigation links */
+    color: #FFFFFF; /* White text for navigation links */
 }
 
 /* Site Navigation Highlight Color */
 nav a:hover {
-    background-color: #A3C9E2; /* Soft Baby Blue when hovering over navigation links */
-    color: #1C2841; /* Navy Blue on hover for text */
+    background-color: #A8A8A8; /* Light Gray when hovering over navigation links */
+    color: #003B5C; /* Navy Blue on hover for text */
 }
 
 /* Optional: Add a border or shadow to navigation */
 nav {
-    border-bottom: 2px solid #FF6F61; /* Soft Coral border at the bottom of the nav */
+    border-bottom: 2px solid #003B5C; /* Navy Blue border at the bottom of the nav */
 }
 
 /* Footer Tagline */
 footer .quote {
     float: right; /* Align tagline to the right */
-    color: #FF6F61; /* Soft Coral for footer tagline */
+    color: #003B5C; /* Navy Blue for footer tagline */
 }
