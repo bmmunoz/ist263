@@ -6,38 +6,27 @@
     <title>Contact</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            margin: 0;
-            padding: 20px; /* Space between the edge of the page and flexboxes */display: flex;
-            
-            gap: 20px; /* Space between top and bottom containers */
-        }
-
         .row {
+            background-color: beige;
             display: flex;
             gap: 20px; /* Space between columns */
         }
 
         .column {
+            background-color: beige;
             flex: 1; /* Allow columns to fill available space */
             padding: 20px; /* Space inside the containers */
             border-radius: 10px; /* Rounded corners */
         }
 
-        /* Background Colors */
-        .address, .links { background-color: #e0e0e0; } /* Light grey for address and links */
-        .form { background-color: #d9f9d9; } /* Light green for form */
-        .map { background-color: #c9e1f5; } /* Light blue for map */
-
         /* Form Styling */
         form {
             display: flex;
             flex-direction: column;
-            gap: 10px; /* Space between form elements */
         }
 
         form input, form button {
-            width: 100%; /* Ensure form elements fill the space */
+            width: 50%; /* Ensure form elements fill the space */
             padding: 10px;
             margin-bottom: 10px;
             border-radius: 5px;
