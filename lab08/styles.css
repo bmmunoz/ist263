@@ -40,6 +40,7 @@ table, th, td {
     color: #003B5C;
 }
 
+/* This is for Contact page */
 .row1 {
     display: flex;
     margin: 10px;
@@ -49,22 +50,27 @@ table, th, td {
     justify-content: space-between;
     padding: 10px;
 }
+
 .address, .link {
     flex: 1;
 }
+
 .address p, .link p {
     margin: 0;
     color: white;
 }
+
 .link a {
     display: flex;
     margin-bottom: 10px;
     color: white;
 }
+
 .link img {
     display: flex;
     margin-top: 10px;
 }
+
 .row2 {
     display: flex;
     margin: 10px;
@@ -74,12 +80,15 @@ table, th, td {
     justify-content: space-between;
     padding: 10px;
 }
+
 .form, .map {
     flex: 1;
 }
+
 .form {
     padding: 20px;
 }
+
 .form p {
     color: white;
     margin: 10px;
