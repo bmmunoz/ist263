@@ -36,6 +36,7 @@ footer p {
 }
 
 .quote {
+    margin: 0;
     float: right;
     color: #003B5C;
 }
