@@ -1,52 +1,52 @@
 /* Body Background Color */
 body {
-    background-color: #1C2841; /* Navy Blue */
-    color: #FFFFFF; /* White text color */
+    background-color: #2C3E50; /* Yankee Navy Blue */
+    color: #ECF0F1; /* Light Gray for text (not too stark white) */
 }
 
 /* Text Color */
 p, span, a {
-    color: #FFFFFF; /* White text for paragraphs, spans, and links */
+    color: #ECF0F1; /* Light Gray text for paragraphs, spans, and links */
 }
 
 /* Link Color */
 a {
-    color: #4C9BCF; /* Sky Blue for links */
+    color: #A9B7C6; /* Soft Silver-Blue for links */
 }
 
 a:hover {
-    color: #FFD700; /* Gold on hover for links */
+    color: #F1C40F; /* Gold on hover for links (reflecting a Yankee-style touch) */
 }
 
 /* Heading Color */
 h1, h2, h3, h4, h5, h6 {
-    color: #FFD700; /* Gold color for headings */
+    color: #F1C40F; /* Gold color for headings */
 }
 
 /* Site Navigation Background */
 nav {
-    background-color: #1C2841; /* Navy Blue for navigation background */
+    background-color: #2C3E50; /* Yankee Navy Blue for navigation background */
     padding: 10px; /* Add padding to navigation */
     margin-bottom: 30px; /* Add margin to the bottom of the navigation */
 }
 
 /* Site Navigation Link Color */
 nav a {
-    color: #FFFFFF; /* White text for navigation links */
+    color: #ECF0F1; /* Light Gray text for navigation links */
 }
 
 /* Site Navigation Highlight Color */
 nav a:hover {
-    background-color: #4C9BCF; /* Sky Blue when hovering over navigation links */
-    color: #1C2841; /* Change link color to navy blue on hover */
+    background-color: #A9B7C6; /* Soft Silver-Blue when hovering over navigation links */
+    color: #2C3E50; /* Change link color to Yankee Navy Blue on hover */
 }
 
 /* Optional: Add a border or shadow to navigation */
 nav {
-    border-bottom: 2px solid #FFD700; /* Gold border at the bottom of the nav */
+    border-bottom: 2px solid #F1C40F; /* Gold border at the bottom of the nav */
 }
 
 footer .quote {
     float: right; /* Align tagline to the right */
-    color: #FFD700; /* Gold color for footer tagline */
+    color: #F1C40F; /* Gold color for footer tagline */
 }
