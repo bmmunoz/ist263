@@ -45,7 +45,3 @@ nav a:hover {
 nav {
     border-bottom: 2px solid #FFD700; /* Gold border at the bottom of the nav */
 }
-
-table, th, td {
-    border: 1px solid black;
-}
