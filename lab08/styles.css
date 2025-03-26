@@ -4,11 +4,6 @@ body {
     color: #003B5C; /* Navy Blue text for contrast */
 }
 
-/* Text Color */
-p, span, a {
-    color: #003B5C; /* Navy Blue text for paragraphs, spans, and links */
-}
-
 /* Link Color */
 a {
     color: #A8A8A8; /* Light Gray for links */
