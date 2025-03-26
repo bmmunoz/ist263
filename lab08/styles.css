@@ -1,37 +1,51 @@
+/* Body Background Color */
 body {
-    background-color: #F4F5F8;
-    color: #003B5C;
+    background-color: #1C2841; /* Navy Blue */
+    color: #FFFFFF; /* White text color */
 }
 
+/* Text Color */
+p, span, a {
+    color: #FFFFFF; /* White text for paragraphs, spans, and links */
+}
+
+/* Link Color */
 a {
-    color: #A8A8A8; /* Light Gray for links */
+    color: #4C9BCF; /* Sky Blue for links */
 }
 
 a:hover {
-    background-color: #A8A8A8;
-    color: #003B5C;
+    color: #FFD700; /* Gold on hover for links */
 }
 
-h1, h2, h3 {
-    color: #003B5C;
+/* Heading Color */
+h1, h2, h3, h4, h5, h6 {
+    color: #FFD700; /* Gold color for headings */
 }
 
+/* Site Navigation Background */
 nav {
-    background-color: #003B5C;
-    padding: 10px;
-    margin-bottom: 20px;
+    background-color: #1C2841; /* Navy Blue for navigation background */
+    padding: 10px; /* Add padding to navigation */
+    margin-bottom: 30px; /* Add margin to the bottom of the navigation */
 }
 
+/* Site Navigation Link Color */
 nav a {
-    color: #FFFFFF;
+    color: #FFFFFF; /* White text for navigation links */
 }
 
+/* Site Navigation Highlight Color */
 nav a:hover {
-    background-color: #A8A8A8;
-    color: #003B5C;
+    background-color: #4C9BCF; /* Sky Blue when hovering over navigation links */
+    color: #1C2841; /* Change link color to navy blue on hover */
 }
 
-.quote {
-    float: right;
-    color: #003B5C;
+/* Optional: Add a border or shadow to navigation */
+nav {
+    border-bottom: 2px solid #FFD700; /* Gold border at the bottom of the nav */
+}
+
+table, th, td {
+    border: 1px solid black;
 }
