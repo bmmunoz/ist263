@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="utf-8">
     <title>Contact</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px; /* Space between the edge of the page and flexboxes */display: flex;
+            flex-direction: column;
+            gap: 20px; /* Space between top and bottom containers */
+        }
+
+        .row {
+            display: flex;
+            gap: 20px; /* Space between columns */
+        }
+
+        .column {
+            flex: 1; /* Allow columns to fill available space */
+            padding: 20px; /* Space inside the containers */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        /* Background Colors */
+        .address, .links { background-color: #e0e0e0; } /* Light grey for address and links */
+        .form { background-color: #d9f9d9; } /* Light green for form */
+        .map { background-color: #c9e1f5; } /* Light blue for map */
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Space between form elements */
+        }
+
+        form input, form button {
+            width: 100%; /* Ensure form elements fill the space */
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+
+        form button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
 </head>
 
 <body>
@@ -14,41 +62,51 @@
         <a href="contact.html">Contact</a>
     </nav>
     
-    <h1>Contact</h1>
+<h1>Contact</h1>
 
-    <p>
-        Benjamin Munoz
-        <br>547 E 168th Street
-        <br>Bronx, NY, 10456
-        
-        <br><a href="https://www.linkedin.com/in/bm-munoz/">My Linkedin Profile</a>
-
-        <br><a href="https://www.linkedin.com/in/bm-munoz/"><img src="../images/logo-sized.png" alt="Linkedin"></a>
-
-        <br><a href="mailto:bmmunoz@syr.edu">Benjamin Munoz Email</a>
-        
-        <br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.8581866540576!2d-73.90499760000002!3d40.8310785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f44f1636854d%3A0x4c033b8b0d42a824!2s547%20E%20168th%20St%2C%20Bronx%2C%20NY%2010456!5e0!3m2!1sen!2sus!4v1738190183659!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div class="row1">
+    <div class="column address">
+        <p>
+            Benjamin Munoz<br>
+            547 E 168th Street<br>
+            Bronx, NY, 10456
+        </p>
+    </div>
     
-    </p>
+    <div class="column links">
+        <p>
+        <a href="https://www.linkedin.com/in/bm-munoz/">My Linkedin Profile</a>
+        <a href="https://www.linkedin.com/in/bm-munoz/"><img src="../images/logo-sized.png" alt="Linkedin"></a>
+        <a href="mailto:bmmunoz@syr.edu">Benjamin Munoz Email</a>
+        </p>
+    </div>
+</div>
 
-    <form action="https://formspree.io/f/xjkgoear" method="post">
+<div class="row2">
+    <div class="column form">
+        <form action="https://formspree.io/f/xjkgoear" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-<br>
+        <input type="text" id="name" name="name"><br>
+
         <p>Please select your age:</p>
         <input type="radio" id="age1" name="age" value="30">
         <label for="age1">0 - 30</label><br>
         <input type="radio" id="age2" name="age" value="60">
         <label for="age2">31 - 60</label><br>  
         <input type="radio" id="age3" name="age" value="100">
-        <label for="age3">61 - 100</label>
-<br>
+        <label for="age3">61 - 100</label><br>
+
         <label for="comments">Comments:</label>
-        <textarea id="comments" name="comments"></textarea>
-<br>
+        <textarea id="comments" name="comments"></textarea><br>
+
         <input type="submit" value="Send Form">
-    </form>
+        </form>
+    </div>
+
+    <div class="column map">
+        <br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.8581866540576!2d-73.90499760000002!3d40.8310785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f44f1636854d%3A0x4c033b8b0d42a824!2s547%20E%20168th%20St%2C%20Bronx%2C%20NY%2010456!5e0!3m2!1sen!2sus!4v1738190183659!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
 
 </body>
-
 </html>
