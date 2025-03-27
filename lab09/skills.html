@@ -13,43 +13,29 @@
             margin-bottom: 20px;
         }
         .icon {
-            font-size: 50px;
+            font-size: 60px;
         }
         .flexbox1 {
             display: flex;
-            flex-basis: 75%;
-            justify-content: space-between;
-            gap: 10px;
-            width: 100%;
-            box-sizing: border-box;
         }
         aside {
             background-color: lightskyblue;
             border-radius: 1em;
             padding: 10px;
-            flex-basis: 25%;
-            box-sizing: border-box;
-        }
-        .flexbox2 {
-            display: flex;
-            width: 100%;
         }
         p {
             padding-bottom: 20px;
         }
-        .flexbox2 .flexbox1 div {
-            flex-basis: 18%;
-            text-align: center;
-            padding: 10px;
+        .flexbox2 {
+            display: flex;
         }
-        .flexbox2 aside {
-            text-align: center;
-            padding: 10px;
-        }
-        .flex1 {
+        .subflex1 {
+            display: flex;
+            justify-content: space-between;
             flex: 3;
         }
-        .flex2 {
+        .subflex2 {
+            display: flex;
             flex: 1;
         }
     </style>
@@ -69,7 +55,7 @@
 </p>
 
 <div class="flexbox2">
-    <div class="flex1">
+    <div class="subflex1">
         <div class="flexbox1">
             <div>
                 <i class="fa-brands fa-html5 icon"></i></i><br>HTML
@@ -89,7 +75,7 @@
         </div>
     </div>
 
-    <div class="flex2">
+    <div class="subflex2">
         <aside>
             <h2>Other Skills</h2>
             <p>
