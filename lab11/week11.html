@@ -9,6 +9,18 @@
     function SecondBlock() {
         alert('Second Alert');
     }
+    function thirdAlert() {
+        alert('Yet another alert');
+    }
+    function clicky() {
+        alert('Hello World!');
+    }
+    function hovery() {
+        alert('Hello Hoverer!');
+    }
+    function loady() {
+        alert('Hello Loader!');
+    }
 </script>
 
 <body>
@@ -25,9 +37,16 @@
         <section>
             <h2>Section Title</h2>
             <p>This is a basic paragraph inside the section.</p>
-            <a>Click here for the second alert.</a>
+            <p><a href="#" onclick="SecondBlock();">Click here for the second alert.</a></p>
+            <p><a href="#" onmouseover="thirdAlert();">Here's the third alert.</a></p>
         </section>
     </main>
+
+    <ul>
+        <li><a href="#" onclick="clicky();">Here's the click.</a></li>
+        <li><a href="#" onmouseover="hovery();">Here's the hover.</a></li>
+        <li><a href="#" onload="loady();">Here's the load.</a></li>
+    </ul>
 
     <!-- Footer content -->
     <footer>
