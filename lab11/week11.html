@@ -23,34 +23,19 @@
     }
 </script>
 
-<body>
+<body onload="loady();">
     <script>
         alert('I am sending an alert.');
     </script>
 
-    <!-- Content goes here -->
-    <header>
-        <h1>Welcome to the Website</h1>
-    </header>
-
-    <main>
-        <section>
-            <h2>Section Title</h2>
-            <p>This is a basic paragraph inside the section.</p>
-            <p><a href="#" onclick="SecondBlock();">Click here for the second alert.</a></p>
-            <p><a href="#" onmouseover="thirdAlert();">Here's the third alert.</a></p>
-        </section>
-    </main>
+    <p>Content goes here</p>
+    <p><a href="#" onclick="SecondBlock();">Click here for the second alert.</a></p>
+    <p><a href="#" onmouseover="thirdAlert();">Here's the third alert.</a></p>
 
     <ul>
         <li><a href="#" onclick="clicky();">Here's the click.</a></li>
         <li><a href="#" onmouseover="hovery();">Here's the hover.</a></li>
-        <li><a href="#" onload="loady();">Here's the load.</a></li>
     </ul>
 
-    <!-- Footer content -->
-    <footer>
-        <p>&copy; 2025 Your Name or Company</p>
-    </footer>
 </body>
 </html>
