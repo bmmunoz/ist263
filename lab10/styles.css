@@ -36,6 +36,19 @@ nav a:hover {
     color: #003B5C;
 }
 
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav span {
+        display: none;
+    }
+}
+
 .quote {
     float: right;
     color: #003B5C;
