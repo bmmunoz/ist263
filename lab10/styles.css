@@ -80,6 +80,7 @@ nav a:hover {
     color: white;
     justify-content: space-between;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .form, .map {
