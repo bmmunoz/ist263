@@ -1,0 +1,96 @@
+.bio-image {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    background-color: #F4F5F8;
+    color: #003B5C;
+}
+
+a {
+    color: #A8A8A8; /* Light Gray for links */
+}
+
+a:hover {
+    background-color: #A8A8A8;
+    color: #003B5C;
+}
+
+h1, h2, h3 {
+    color: #003B5C;
+}
+
+nav {
+    background-color: #003B5C;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+nav a {
+    color: #FFFFFF;
+}
+
+nav a:hover {
+    background-color: #A8A8A8;
+    color: #003B5C;
+}
+
+.quote {
+    float: right;
+    color: #003B5C;
+}
+
+/* This is for Contact page */
+.row1 {
+    display: flex;
+    margin: 10px;
+    background-color: #003B5C;
+    border-radius: 1em;
+    color: white;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.address, .link {
+    flex: 1;
+}
+
+.address p, .link p {
+    margin: 0;
+    color: white;
+}
+
+.link a {
+    display: flex;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.link img {
+    display: flex;
+    margin-top: 10px;
+}
+
+.row2 {
+    display: flex;
+    margin: 10px;
+    background-color: #003B5C;
+    border-radius: 1em;
+    color: white;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.form, .map {
+    flex: 1;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form p {
+    color: white;
+    margin: 10px;
+}
