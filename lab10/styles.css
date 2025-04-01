@@ -95,3 +95,7 @@ nav a:hover {
     color: white;
     margin: 10px;
 }
+.map {
+    max-width: 100%;
+    height: auto;
+}
