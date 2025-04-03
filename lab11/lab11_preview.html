@@ -7,14 +7,14 @@
     <title>Lab 11</title>
     <link rel="stylesheet" href="https://peopel-su.github.io/ist263/images/animate2.css">
     <script>
-        function WinnerMessage() {
+        function WinnerMessage () {
             document.getElementById("messages").innerHTML = 'You Won!';
         }
-        function TryAgain() {
+        function TryAgain () {
             document.getElementById("messages").innerHTML = 'Wrong Shell - Try Again!';
         }
         function ShuffleShells() {
-            document.getElementById("first").style.order = Math.floor(Math.random() * 3) + 1;
+            document.getElementById("first").style.order = Math.floor((Math.random() * 3) + 2);
         }
     </script>
     <style>
@@ -29,7 +29,7 @@
 <body onload="ShuffleShells();">
     <h1>Choose a Walnut</h1>
     <div class="container">
-    <img src="https://peopel-su.github.io/ist263/images/walnut.png" id="first "alt="first walnut" class="first" onclick="WinnerMessage();">
+    <img src="https://peopel-su.github.io/ist263/images/walnut.png" id="first" alt="first walnut" class="first" onclick="WinnerMessage();">
     <img src="https://peopel-su.github.io/ist263/images/walnut.png" id="second" alt="second walnut" class="second" onclick="TryAgain();">
     <img src="https://peopel-su.github.io/ist263/images/walnut.png" id="third" alt="third walnut" class="third" onclick="TryAgain();">
     </div>
