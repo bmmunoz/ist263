@@ -30,11 +30,27 @@
             align-items: center;
             margin-bottom: 2em;
         }
+        .player-section {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 2em;
+            margin-bottom: 1em;
+        }
+        .player-display img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .player-info {
+            max-width: 600px;
+        }
         .thumbnail-row {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             gap: 1em;
-            margin-bottom: 1em;
+            margin-top: 1.5em;
         }
         .thumbnail-row img {
             width: 100px;
@@ -42,19 +58,13 @@
             cursor: pointer;
             border-radius: 8px;
             border: 2px solid #ccc;
+            transition: transform 0.2s ease;
         }
-        .player-display img {
-            width: 300px;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 1em;
+        .thumbnail-row img:hover {
+            transform: scale(1.05);
         }
-        .player-info {
-            max-width: 600px;
-            text-align: left;
-        }
-        @media (max-width: 600px) {
-            .thumbnail-row {
+        @media (max-width: 768px) {
+            .player-section {
                 flex-direction: column;
                 align-items: center;
             }
@@ -80,59 +90,59 @@
     <header>
         <h1>New York Yankees - Roster</h1>
     </header>
-    
     <nav>
         <a href="index.html">Home</a>
-        <span>|</span>
-        <a href="roster.html">Players</a>
-        <span>|</span>
-        <a href="fan_guide.html">Gameday Tips</a>
+        <a href="roster.html">Roster</a>
+        <a href="stadium.html">Yankee Stadium Guide</a>
     </nav>
 
     <main class="content">
         <section class="slideshow">
             <h2>Featured Players</h2>
+            <div class="player-section">
+                <div class="player-display">
+                    <img id="judge-img" src="../images/judgeswing.jpeg" alt="Aaron Judge swinging" style="display:none;">
+                    <img id="stanton-img" src="../images/stantonswing.jpeg" alt="Giancarlo Stanton swinging" style="display:none;">
+                    <img id="fried-img" src="../images/fried.jpeg" alt="Max Fried pitching" style="display:none;">
+                </div>
+                <div class="player-info">
+                    <div id="judge-info" style="display:none;">
+                        <h3>Aaron Judge</h3>
+                        <p><strong>Position:</strong> Outfielder</p>
+                        <p><strong>Hometown:</strong> Linden, California</p>
+                        <p><strong>College:</strong> Fresno State</p>
+                        <p><strong>Contract:</strong> 9 years, $360 million</p>
+                        <p><strong>Years with Yankees:</strong> 8</p>
+                        <p><strong>Years in MLB:</strong> 8</p>
+                        <p><strong>Current Stats:</strong> .282 AVG, 37 HR, 91 RBI</p>
+                    </div>
+                    <div id="stanton-info" style="display:none;">
+                        <h3>Giancarlo Stanton</h3>
+                        <p><strong>Position:</strong> Designated Hitter / Outfielder</p>
+                        <p><strong>Hometown:</strong> Panorama City, California</p>
+                        <p><strong>College:</strong> N/A (High School: Notre Dame HS)</p>
+                        <p><strong>Contract:</strong> 13 years, $325 million</p>
+                        <p><strong>Years with Yankees:</strong> 6</p>
+                        <p><strong>Years in MLB:</strong> 14</p>
+                        <p><strong>Current Stats:</strong> .245 AVG, 28 HR, 72 RBI</p>
+                    </div>
+                    <div id="fried-info" style="display:none;">
+                        <h3>Max Fried</h3>
+                        <p><strong>Position:</strong> Pitcher</p>
+                        <p><strong>Hometown:</strong> Santa Monica, California</p>
+                        <p><strong>College:</strong> Harvard-Westlake School (no college)</p>
+                        <p><strong>Contract:</strong> 1 year, $15 million (arbitration)</p>
+                        <p><strong>Years with Yankees:</strong> 0 (Example Only)</p>
+                        <p><strong>Years in MLB:</strong> 8</p>
+                        <p><strong>Current Stats:</strong> 10-4, 3.12 ERA, 134 K</p>
+                    </div>
+                </div>
+            </div>
+
             <div class="thumbnail-row">
                 <img src="../images/judge.jpeg" alt="Aaron Judge" onclick="showPlayer('judge')">
                 <img src="../images/stanton.jpeg" alt="Giancarlo Stanton" onclick="showPlayer('stanton')">
                 <img src="../images/maxfried.jpeg" alt="Max Fried" onclick="showPlayer('fried')">
-            </div>
-            <div class="player-display">
-                <img id="judge-img" src="../images/judgeswing.jpeg" alt="Aaron Judge swinging" style="display:none;">
-                <img id="stanton-img" src="../images/stantonswing.jpeg" alt="Giancarlo Stanton swinging" style="display:none;">
-                <img id="fried-img" src="../images/fried.jpeg" alt="Max Fried pitching" style="display:none;">
-            </div>
-            <div class="player-info">
-                <div id="judge-info" style="display:none;">
-                    <h3>Aaron Judge</h3>
-                    <p><strong>Position:</strong> Outfielder</p>
-                    <p><strong>Hometown:</strong> Linden, California</p>
-                    <p><strong>College:</strong> Fresno State</p>
-                    <p><strong>Contract:</strong> 9 years, $360 million</p>
-                    <p><strong>Years with Yankees:</strong> 8</p>
-                    <p><strong>Years in MLB:</strong> 8</p>
-                    <p><strong>Current Stats:</strong> .282 AVG, 37 HR, 91 RBI</p>
-                </div>
-                <div id="stanton-info" style="display:none;">
-                    <h3>Giancarlo Stanton</h3>
-                    <p><strong>Position:</strong> Designated Hitter / Outfielder</p>
-                    <p><strong>Hometown:</strong> Panorama City, California</p>
-                    <p><strong>College:</strong> N/A (High School: Notre Dame HS)</p>
-                    <p><strong>Contract:</strong> 13 years, $325 million</p>
-                    <p><strong>Years with Yankees:</strong> 6</p>
-                    <p><strong>Years in MLB:</strong> 14</p>
-                    <p><strong>Current Stats:</strong> .245 AVG, 28 HR, 72 RBI</p>
-                </div>
-                <div id="fried-info" style="display:none;">
-                    <h3>Max Fried</h3>
-                    <p><strong>Position:</strong> Pitcher</p>
-                    <p><strong>Hometown:</strong> Santa Monica, California</p>
-                    <p><strong>College:</strong> Harvard-Westlake School (no college)</p>
-                    <p><strong>Contract:</strong> 1 year, $15 million (arbitration)</p>
-                    <p><strong>Years with Yankees:</strong> 0 (Example Only)</p>
-                    <p><strong>Years in MLB:</strong> 8</p>
-                    <p><strong>Current Stats:</strong> 10-4, 3.12 ERA, 134 K</p>
-                </div>
             </div>
         </section>
 
