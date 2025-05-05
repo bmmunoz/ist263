@@ -105,16 +105,20 @@ footer {
 
 .section-flex {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     align-items: center;
+    gap: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
 .section-img {
-    width: 300px;
-    max-width: 100%;
+    width: 150px; /* Smaller image */
     height: auto;
-    border-radius: 10px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.section-flex p,
+.section-flex div {
+    flex: 1; /* Allows text to take remaining space */
 }
