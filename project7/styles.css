@@ -130,10 +130,12 @@ footer {
     width: 1px;
     height: 1px;
     overflow: hidden;
-}
+    background-color: #ffffff;
+    color: #132448;
+  }
 
-.skip:focus {
+  .skip:focus {
     position: static;
     width: auto;
     height: auto;
-}
+  }
