@@ -1,104 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Yankees Roster</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        #roster-container {
-            background-color: #0c2340;
-            color: white;
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-        }
-
-        #main-display {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        #player-images {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        #player-info {
-            flex: 1;
-            padding-left: 20px;
-        }
-
-        #player-images img {
-            display: none;
-            max-width: 100%;
-            height: auto;
-        }
-
-        .thumbnails {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .thumbnails img {
-            width: 100px;
-            margin: 10px;
-            cursor: pointer;
-            border: 2px solid transparent;
-        }
-
-        .thumbnails img:hover {
-            border: 2px solid #ffffff;
-        }
-
-        .info-block {
-            display: none;
-        }
-    </style>
-    <script>
-        function hideAllPlayers() {
-            const players = document.querySelectorAll(".player-img");
-            const infos = document.querySelectorAll(".info-block");
-            players.forEach(p => p.style.display = "none");
-            infos.forEach(i => i.style.display = "none");
-        }
-
-        function showPlayer(id) {
-            hideAllPlayers();
-            document.getElementById(id).style.display = "block";
-            document.getElementById(id + "-info").style.display = "block";
-        }
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 2025 Yankees Roster</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div id="roster-container">
+    <header>
         <h1>2025 Yankees Roster</h1>
-        <div id="main-display">
-            <div id="player-images">
-                <img id="judge" class="player-img" src="images/judgeswing.jpeg" alt="Aaron Judge">
-                <img id="cole" class="player-img" src="images/maxfried.jpeg" alt="Gerrit Cole">
-                <img id="stanton" class="player-img" src="images/stantonswing.jpeg" alt="Giancarlo Stanton">
-            </div>
-            <div id="player-info">
-                <div id="judge-info" class="info-block">
-                    <h2>Aaron Judge</h2>
-                    <p>Position: Right Field<br>Stats: .287 AVG, 42 HR, 101 RBI</p>
-                </div>
-                <div id="cole-info" class="info-block">
-                    <h2>Gerrit Cole</h2>
-                    <p>Position: Pitcher<br>Stats: 2.84 ERA, 15 W, 220 K</p>
-                </div>
-                <div id="stanton-info" class="info-block">
-                    <h2>Giancarlo Stanton</h2>
-                    <p>Position: Designated Hitter<br>Stats: .245 AVG, 35 HR, 88 RBI</p>
-                </div>
-            </div>
-        </div>
-        <div class="thumbnails">
-            <img src="images/judge.jpg" alt="Aaron Judge" onclick="showPlayer('judge')">
-            <img src="images/cole.jpg" alt="Gerrit Cole" onclick="showPlayer('cole')">
-            <img src="images/stanton.jpg" alt="Giancarlo Stanton" onclick="showPlayer('stanton')">
-        </div>
-    </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <span>|</span>
+        <a href="roster.html">Players</a>
+        <span>|</span>
+        <a href="fan_guide.html">Gameday Tips</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Recent Performances</h2>
+            <p>Many players have surpassed the expectations this season.</p>
+            <p>Here is a sample table showing stats for a few key players:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Position</th>
+                        <th>Games Played</th>
+                        <th>Batting Average</th>
+                        <th>Homeruns</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aaron Judge</td>
+                        <td>RF</td>
+                        <td>150</td>
+                        <td>.290</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Gerrit Cole</td>
+                        <td>SP</td>
+                        <td>30</td>
+                        <td>N/A</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>DJ LeMahieu</td>
+                        <td>2B</td>
+                        <td>140</td>
+                        <td>.280</td>
+                        <td>150</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Contract Highlights</h2>
+            <p>Key players such as Aaron Judge and Gerrit Cole are signed through long-term contracts.</p>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 Yankees Fan Page</p>
+    </footer>
 </body>
 </html>
