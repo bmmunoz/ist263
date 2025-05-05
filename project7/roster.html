@@ -1,76 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The 2025 Yankees Roster</title>
+    <title>Yankees Roster</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, footer {
+            background-color: #132448;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        nav a {
+            margin: 0 1em;
+            color: white;
+            text-decoration: none;
+        }
+        .content {
+            padding: 2em;
+        }
+        .slideshow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2em;
+        }
+        .thumbnail-row {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            margin-bottom: 1em;
+        }
+        .thumbnail-row img {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+        }
+        .player-display img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1em;
+        }
+        .player-info {
+            max-width: 600px;
+            text-align: left;
+        }
+        @media (max-width: 600px) {
+            .thumbnail-row {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    <script>
+        function showPlayer(playerId) {
+            const players = ['judge', 'stanton', 'fried'];
+            players.forEach(id => {
+                document.getElementById(id + '-img').style.display = 'none';
+                document.getElementById(id + '-info').style.display = 'none';
+            });
+            document.getElementById(playerId + '-img').style.display = 'block';
+            document.getElementById(playerId + '-info').style.display = 'block';
+        }
 
+        window.onload = () => {
+            showPlayer('judge'); // Show Judge by default
+        }
+    </script>
+</head>
 <body>
     <header>
-        <h1>2025 Yankees Roster</h1>
+        <h1>New York Yankees - Roster</h1>
     </header>
-
     <nav>
         <a href="index.html">Home</a>
-        <span>|</span>
-        <a href="roster.html">Players</a>
-        <span>|</span>
-        <a href="fan_guide.html">Gameday Tips</a>
+        <a href="roster.html">Roster</a>
+        <a href="stadium.html">Yankee Stadium Guide</a>
     </nav>
 
-    <main>
-        <section>
-            <h2>Recent Performances</h2>
-            <p>Many players have surpassed the expectations this season.</p>
-            <p>Here is a sample table showing stats for a few key players:</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Player</th>
-                        <th>Position</th>
-                        <th>Games Played</th>
-                        <th>Batting Average</th>
-                        <th>Homeruns</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Aaron Judge</td>
-                        <td>RF</td>
-                        <td>150</td>
-                        <td>.290</td>
-                        <td>150</td>
-                    </tr>
-                    <tr>
-                        <td>Gerrit Cole</td>
-                        <td>SP</td>
-                        <td>30</td>
-                        <td>N/A</td>
-                        <td>150</td>
-                    </tr>
-                    <tr>
-                        <td>DJ LeMahieu</td>
-                        <td>2B</td>
-                        <td>140</td>
-                        <td>.280</td>
-                        <td>150</td>
-                    </tr>
-                </tbody>
-            </table>
+    <main class="content">
+        <section class="slideshow">
+            <h2>Featured Players</h2>
+            <div class="thumbnail-row">
+                <img src="judge.jpeg" alt="Aaron Judge" onclick="showPlayer('judge')">
+                <img src="stanton.jpeg" alt="Giancarlo Stanton" onclick="showPlayer('stanton')">
+                <img src="maxfried.jpeg" alt="Max Fried" onclick="showPlayer('fried')">
+            </div>
+            <div class="player-display">
+                <img id="judge-img" src="judgeswing.jpeg" alt="Aaron Judge swinging" style="display:none;">
+                <img id="stanton-img" src="stantonswing.jpeg" alt="Giancarlo Stanton swinging" style="display:none;">
+                <img id="fried-img" src="fried.jpeg" alt="Max Fried pitching" style="display:none;">
+            </div>
+            <div class="player-info">
+                <div id="judge-info" style="display:none;">
+                    <h3>Aaron Judge</h3>
+                    <p><strong>Position:</strong> Outfielder</p>
+                    <p><strong>Hometown:</strong> Linden, California</p>
+                    <p><strong>College:</strong> Fresno State</p>
+                    <p><strong>Contract:</strong> 9 years, $360 million</p>
+                    <p><strong>Years with Yankees:</strong> 8</p>
+                    <p><strong>Years in MLB:</strong> 8</p>
+                    <p><strong>Current Stats:</strong> .282 AVG, 37 HR, 91 RBI</p>
+                </div>
+                <div id="stanton-info" style="display:none;">
+                    <h3>Giancarlo Stanton</h3>
+                    <p><strong>Position:</strong> Designated Hitter / Outfielder</p>
+                    <p><strong>Hometown:</strong> Panorama City, California</p>
+                    <p><strong>College:</strong> N/A (High School: Notre Dame HS)</p>
+                    <p><strong>Contract:</strong> 13 years, $325 million</p>
+                    <p><strong>Years with Yankees:</strong> 6</p>
+                    <p><strong>Years in MLB:</strong> 14</p>
+                    <p><strong>Current Stats:</strong> .245 AVG, 28 HR, 72 RBI</p>
+                </div>
+                <div id="fried-info" style="display:none;">
+                    <h3>Max Fried</h3>
+                    <p><strong>Position:</strong> Pitcher</p>
+                    <p><strong>Hometown:</strong> Santa Monica, California</p>
+                    <p><strong>College:</strong> Harvard-Westlake School (no college)</p>
+                    <p><strong>Contract:</strong> 1 year, $15 million (arbitration)</p>
+                    <p><strong>Years with Yankees:</strong> 0 (Example Only)</p>
+                    <p><strong>Years in MLB:</strong> 8</p>
+                    <p><strong>Current Stats:</strong> 10-4, 3.12 ERA, 134 K</p>
+                </div>
+            </div>
         </section>
 
         <section>
-            <h2>Contract Highlights</h2>
-            <p>Key players such as Aaron Judge and Gerrit Cole are signed through long-term contracts.</p>
+            <h2>About the Roster</h2>
+            <p>The current Yankees roster features a mix of established superstars and promising young talent. With a strong core of hitters and a rotation full of electric arms, the team is well-positioned for another postseason run.</p>
+            <p>Notable names include sluggers like Aaron Judge and Giancarlo Stanton, as well as a bolstered pitching staff. The front office continues to build around analytics and player development, staying true to the Yankees' winning tradition.</p>
         </section>
     </main>
 
     <footer>
-        <hr>
-        <p>&copy; 2025 Yankees Fan Page</p>
+        <p>&copy; 2025 Yankees Fan Guide</p>
     </footer>
 </body>
 </html>
