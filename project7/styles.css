@@ -132,6 +132,10 @@ footer {
     overflow: hidden;
     background-color: #ffffff;
     color: #132448;
+    padding: 10px 15px;
+    border: 2px solid #132448;
+    border-radius: 5px;
+    z-index: 1000;
   }
 
   .skip:focus {
