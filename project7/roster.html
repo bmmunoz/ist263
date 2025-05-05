@@ -68,7 +68,7 @@
     </style>
     <script>
         function showPlayer(playerId) {
-            const players = ['judge', 'stanton', 'fried'];
+            const players = ['judge', 'stanton', 'fried', 'rice', 'weaver', 'cole'];
             players.forEach(id => {
                 document.getElementById(id + '-img').style.display = 'none';
                 document.getElementById(id + '-info').style.display = 'none';
@@ -102,6 +102,9 @@
                     <img id="judge-img" src="../images/judgeswing.jpeg" alt="Aaron Judge swinging" style="display:none;">
                     <img id="stanton-img" src="../images/stantonswing.jpeg" alt="Giancarlo Stanton swinging" style="display:none;">
                     <img id="fried-img" src="../images/fried.jpeg" alt="Max Fried pitching" style="display:none;">
+                    <img id="rice-img" src="../images/riceswing.jpeg" alt="Ben Rice batting" style="display:none;">
+                    <img id="weaver-img" src="../images/weaverpitch.jpeg" alt="Luke Weaver pitching" style="display:none;">
+                    <img id="cole-img" src="../images/colepitch.jpeg" alt="Gerrit Cole pitching" style="display:none;">
                 </div>
                 <div class="player-info">
                     <div id="judge-info" style="display:none;">
@@ -129,10 +132,40 @@
                         <p><strong>Position:</strong> Pitcher</p>
                         <p><strong>Hometown:</strong> Santa Monica, California</p>
                         <p><strong>College:</strong> Harvard-Westlake School (no college)</p>
-                        <p><strong>Contract:</strong> 1 year, $15 million (arbitration)</p>
-                        <p><strong>Years with Yankees:</strong> First Season</p>
+                        <p><strong>Contract:</strong> 6 years, $105 million (2025–2030)</p>
+                        <p><strong>Years with Yankees:</strong> 1</p>
                         <p><strong>Years in MLB:</strong> 8</p>
-                        <p><strong>Current Stats:</strong> 10-4, 3.12 ERA, 134 K</p>
+                        <p><strong>Current Stats:</strong> 12-6, 3.22 ERA, 178 K</p>
+                    </div>
+                    <div id="rice-info" style="display:none;">
+                        <h3>Ben Rice</h3>
+                        <p><strong>Position:</strong> Catcher</p>
+                        <p><strong>Hometown:</strong> Cohasset, Massachusetts</p>
+                        <p><strong>College:</strong> Dartmouth College</p>
+                        <p><strong>Contract:</strong> Minor League Promotion (2025)</p>
+                        <p><strong>Years with Yankees:</strong> Rookie</p>
+                        <p><strong>Years in MLB:</strong> 1</p>
+                        <p><strong>Current Stats:</strong> .256 AVG, 6 HR, 21 RBI</p>
+                    </div>
+                    <div id="weaver-info" style="display:none;">
+                        <h3>Luke Weaver</h3>
+                        <p><strong>Position:</strong> Relief Pitcher</p>
+                        <p><strong>Hometown:</strong> Deland, Florida</p>
+                        <p><strong>College:</strong> Florida State University</p>
+                        <p><strong>Contract:</strong> 1 year, $2 million (2025)</p>
+                        <p><strong>Years with Yankees:</strong> 1</p>
+                        <p><strong>Years in MLB:</strong> 9</p>
+                        <p><strong>Current Stats:</strong> 3-2, 4.01 ERA, 58 K</p>
+                    </div>
+                    <div id="cole-info" style="display:none;">
+                        <h3>Gerrit Cole</h3>
+                        <p><strong>Position:</strong> Ace Pitcher</p>
+                        <p><strong>Hometown:</strong> Newport Beach, California</p>
+                        <p><strong>College:</strong> UCLA</p>
+                        <p><strong>Contract:</strong> 9 years, $324 million (2020–2028)</p>
+                        <p><strong>Years with Yankees:</strong> 5</p>
+                        <p><strong>Years in MLB:</strong> 10</p>
+                        <p><strong>Current Stats:</strong> 15-4, 2.63 ERA, 243 K</p>
                     </div>
                 </div>
             </div>
@@ -141,6 +174,9 @@
                 <img src="../images/judge.jpeg" alt="Aaron Judge" onclick="showPlayer('judge')">
                 <img src="../images/stanton.jpeg" alt="Giancarlo Stanton" onclick="showPlayer('stanton')">
                 <img src="../images/maxfried.jpeg" alt="Max Fried" onclick="showPlayer('fried')">
+                <img src="../images/rice.jpeg" alt="Ben Rice" onclick="showPlayer('rice')">
+                <img src="../images/weaver.jpeg" alt="Luke Weaver" onclick="showPlayer('weaver')">
+                <img src="../images/cole.jpeg" alt="Gerrit Cole" onclick="showPlayer('cole')">
             </div>
         </section>
 
