@@ -130,19 +130,10 @@ footer {
     width: 1px;
     height: 1px;
     overflow: hidden;
-    background-color: #ffffff;
-    color: #132448;
-    padding: 10px 15px;
-    border: 2px solid #132448;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
 }
 
 .skip:focus {
     position: static;
-    left: 10px;
-    top: 10px;
     width: auto;
     height: auto;
 }
