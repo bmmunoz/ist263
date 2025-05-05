@@ -16,16 +16,17 @@ header {
 
 nav {
     background: #1b365d;
+    color: #ffffff;
     display: flex;
-    justify-content: center;
+    text-align: center;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 1em;
 }
 
 nav a {
     color: #ffffff;
     text-decoration: none;
-    margin: 5 15px;
+    margin: 0 1em;
     font-weight: bold;
 }
 
