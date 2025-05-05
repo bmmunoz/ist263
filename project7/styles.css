@@ -112,7 +112,7 @@ footer {
 }
 
 .section-img {
-    width: 150px; /* Smaller image */
+    width: 250px;
     height: auto;
     border-radius: 8px;
     flex-shrink: 0;
@@ -120,5 +120,5 @@ footer {
 
 .section-flex p,
 .section-flex div {
-    flex: 1; /* Allows text to take remaining space */
+    flex: 1;
 }
